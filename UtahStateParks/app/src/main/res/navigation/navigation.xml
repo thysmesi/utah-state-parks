@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home_screen_fragment">
+
+    <fragment
+        android:id="@+id/home_screen_fragment"
+        android:name="com.example.utahstateparks.HomeScreenFragment"
+        android:label="home_screen_fragment"
+        tools:layout="@layout/home_screen_fragment" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_parkSelectorFragment"
+            app:destination="@id/park_selector_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/park_selector_fragment"
+        android:name="com.example.utahstateparks.parkSelectorFragment"
+        android:label="park_selector_fragment"
+        tools:layout="@layout/park_selector_fragment" />
+</navigation>
