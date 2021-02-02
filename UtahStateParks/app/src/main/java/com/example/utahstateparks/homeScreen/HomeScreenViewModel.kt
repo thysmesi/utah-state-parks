@@ -24,6 +24,9 @@ class HomeScreenViewModel : ViewModel() {
     val navigateToParks: LiveData<Boolean?>
         get() = _navigateToParks
 
+    private val _navigateToMenu = MutableLiveData<Boolean?>()
+    val navigateToMenu: LiveData<Boolean?>
+        get() = _navigateToMenu
 
 
     fun doneNavigating() {
@@ -31,6 +34,7 @@ class HomeScreenViewModel : ViewModel() {
         _navigateToAtvInfo.value = null
         _navigateToPasses.value = null
         _navigateToParks.value = null
+        _navigateToMenu.value = null
     }
 
     fun onClickBoatButton() {
@@ -44,5 +48,8 @@ class HomeScreenViewModel : ViewModel() {
     }
     fun onClickParksButton() {
         _navigateToParks.value = true
+    }
+    fun onClickMenuButton() {
+        _navigateToMenu.value = true
     }
 }
