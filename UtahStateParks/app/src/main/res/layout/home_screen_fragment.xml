@@ -1,13 +1,280 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeScreenFragment">
 
-    <TextView
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="homeScreenViewModel"
+            type="com.example.utahstateparks.homeScreen.HomeScreenViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Home Screen Fragment" />
+        tools:context=".homeScreen.HomeScreenFragment">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/header_image"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/header_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/feature"
+            tools:src="@tools:sample/backgrounds/scenic" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/top_roundedcourners"
+            app:layout_constraintBottom_toTopOf="@+id/atv_nav_button"
+            app:layout_constraintTop_toTopOf="@+id/header_image">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintHorizontal_bias="0.5">
+
+                <ImageView
+                    android:id="@+id/pass_menu_button"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/pass_menu_button"
+                    android:cropToPadding="false"
+                    android:onClick="@{() -> homeScreenViewModel.onClickPassButton()}"
+                    android:padding="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/passes_menu_item"
+                    app:layout_constraintStart_toEndOf="@+id/atv_menu_button"
+                    app:layout_constraintTop_toBottomOf="@+id/boat_menu_button" />
+
+                <ImageView
+                    android:id="@+id/park_menu_button"
+                    android:layout_width="380dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/hightlight_roundedcourners"
+                    android:contentDescription="@string/park_menu_button"
+                    android:cropToPadding="false"
+                    android:onClick="@{() -> homeScreenViewModel.onClickParksButton()}"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/parks_menu_item"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/atv_menu_button" />
+
+                <ImageView
+                    android:id="@+id/atv_menu_button"
+                    android:layout_width="180dp"
+                    android:layout_height="380dp"
+                    android:background="@drawable/hightlight_roundedcourners"
+                    android:contentDescription="@string/atv_menu_button"
+                    android:cropToPadding="false"
+                    android:onClick="@{() -> homeScreenViewModel.onClickAtvButton()}"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/atv_menu_item"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/boat_menu_button"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/hightlight_roundedcourners"
+                    android:contentDescription="@string/boat_menu_button"
+                    android:onClick="@{() -> homeScreenViewModel.onClickBoatButton()}"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/boating_menu_item"
+                    app:layout_constraintStart_toEndOf="@+id/atv_menu_button"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/park_menu_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hightlight_roundedcourners"
+                    android:fontFamily="@font/kadwa"
+                    android:gravity="bottom"
+                    android:padding="3dp"
+                    android:text="@string/find_a_park"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/park_menu_button"
+                    app:layout_constraintEnd_toEndOf="@+id/park_menu_button"
+                    app:layout_constraintStart_toStartOf="@+id/park_menu_button" />
+
+                <TextView
+                    android:id="@+id/boat_menu_text"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/hightlight_roundedcourners"
+                    android:fontFamily="@font/kadwa"
+                    android:gravity="bottom"
+                    android:text="@string/boating_information"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/boat_menu_button"
+                    app:layout_constraintEnd_toEndOf="@+id/boat_menu_button"
+                    app:layout_constraintStart_toStartOf="@+id/boat_menu_button" />
+
+                <TextView
+                    android:id="@+id/pass_menu_text"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/hightlight_roundedcourners"
+                    android:fontFamily="@font/kadwa"
+                    android:gravity="bottom"
+                    android:text="@string/park_passes"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/pass_menu_button"
+                    app:layout_constraintEnd_toEndOf="@+id/pass_menu_button"
+                    app:layout_constraintStart_toStartOf="@+id/pass_menu_button" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/hightlight_roundedcourners"
+                    app:layout_constraintBottom_toBottomOf="@+id/atv_menu_button"
+                    app:layout_constraintEnd_toEndOf="@+id/atv_menu_button"
+                    app:layout_constraintStart_toStartOf="@+id/atv_menu_button">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/quad_icon" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="17dp"
+                        android:fontFamily="@font/kadwa"
+                        android:text="@string/off_highway_vehicle"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp"
+                        android:fontFamily="@font/kadwa"
+                        android:text="@string/information"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintEnd_toEndOf="@+id/boat_menu_button"
+                    app:layout_constraintStart_toStartOf="@+id/boat_menu_button"
+                    app:layout_constraintTop_toTopOf="@+id/boat_menu_text"
+                    app:srcCompat="@drawable/ic_boat" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    app:layout_constraintEnd_toEndOf="@+id/pass_menu_button"
+                    app:layout_constraintStart_toStartOf="@+id/pass_menu_button"
+                    app:layout_constraintTop_toTopOf="@+id/pass_menu_text"
+                    app:srcCompat="@drawable/tickets_icon" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/pass_nav_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:insetTop="0dp"
+            android:onClick="@{() -> homeScreenViewModel.onClickPassButton()}"
+            android:insetBottom="0dp"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/tickets_icon"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconTint="@color/dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/atv_nav_button" />
+
+        <Button
+            android:id="@+id/atv_nav_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:includeFontPadding="false"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingBottom="10dp"
+            android:onClick="@{() -> homeScreenViewModel.onClickAtvButton()}"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/quad_icon"
+            app:iconGravity="textEnd"
+            app:iconPadding="0dp"
+            app:iconTint="@color/dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pass_nav_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/boat_nav_button" />
+
+        <Button
+            android:id="@+id/boat_nav_button"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:includeFontPadding="false"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:rotationX="-360"
+            android:onClick="@{() -> homeScreenViewModel.onClickBoatButton()}"
+            app:cornerRadius="0dp"
+            app:icon="@drawable/ic_boat"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconTint="@color/dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/atv_nav_button"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

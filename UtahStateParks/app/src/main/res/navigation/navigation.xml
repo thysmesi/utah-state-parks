@@ -3,20 +3,43 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/home_screen_fragment">
+    app:startDestination="@id/homeScreenFragment">
 
     <fragment
-        android:id="@+id/home_screen_fragment"
-        android:name="com.example.utahstateparks.HomeScreenFragment"
-        android:label="home_screen_fragment"
-        tools:layout="@layout/home_screen_fragment" >
+        android:id="@+id/homeScreenFragment"
+        android:name="com.example.utahstateparks.homeScreen.HomeScreenFragment"
+        android:label="home_screen_fragment">
         <action
-            android:id="@+id/action_homeScreenFragment_to_parkSelectorFragment"
-            app:destination="@id/park_selector_fragment" />
+            android:id="@+id/action_homeScreenFragment_to_atvInfoFragment"
+            app:destination="@id/atvInfoFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_boatingInfoFragment"
+            app:destination="@id/boatingInfoFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_parkPassesFragment"
+            app:destination="@id/parkPassesFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_parksSelectorFragment"
+            app:destination="@id/parksSelectorFragment" />
     </fragment>
     <fragment
-        android:id="@+id/park_selector_fragment"
-        android:name="com.example.utahstateparks.parkSelectorFragment"
-        android:label="park_selector_fragment"
-        tools:layout="@layout/park_selector_fragment" />
+        android:id="@+id/atvInfoFragment"
+        android:name="com.example.utahstateparks.atvInfo.AtvInfoFragment"
+        android:label="atv_info_fragment"
+        tools:layout="@layout/atv_info_fragment" />
+    <fragment
+        android:id="@+id/boatingInfoFragment"
+        android:name="com.example.utahstateparks.boatingInfo.BoatingInfoFragment"
+        android:label="boating_info_fragment"
+        tools:layout="@layout/boating_info_fragment" />
+    <fragment
+        android:id="@+id/parkPassesFragment"
+        android:name="com.example.utahstateparks.parkPasses.ParkPassesFragment"
+        android:label="park_passes_fragment"
+        tools:layout="@layout/park_passes_fragment" />
+    <fragment
+        android:id="@+id/parksSelectorFragment"
+        android:name="com.example.utahstateparks.ParksSelector.ParksSelectorFragment"
+        android:label="parks_selector_fragment"
+        tools:layout="@layout/parks_selector_fragment" />
 </navigation>

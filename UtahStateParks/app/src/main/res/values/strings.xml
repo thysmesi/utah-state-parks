@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">UtahStateParks</string>
+    <string name="boat_menu_button">Boat Menu Button</string>
+    <string name="atv_menu_button">ATV Menu Button</string>
+    <string name="park_menu_button">Park Menu Button</string>
+    <string name="pass_menu_button">Pass Menu Button</string>
+    <string name="find_a_park">Find A Park</string>
+    <string name="boating_information">Boating Information</string>
+    <string name="park_passes">Park Passes</string>
+    <string name="off_highway_vehicle">Off-Highway Vehicle</string>
+    <string name="header_image">Header Image</string>
+    <string name="information">Information</string>
 </resources>
