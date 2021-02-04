@@ -1,4 +1,4 @@
-package com.example.utahstateparks.ParksSelector
+package com.example.utahstateparks.parksSelector
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -9,10 +9,6 @@ import android.view.ViewGroup
 import com.example.utahstateparks.R
 
 class ParksSelectorFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = ParksSelectorFragment()
-    }
 
     private lateinit var viewModel: ParksSelectorViewModel
 

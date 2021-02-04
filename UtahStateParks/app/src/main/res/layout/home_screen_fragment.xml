@@ -33,8 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_centerVertical="true"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/top_roundedcourners"
+            android:background="@color/dark"
             app:layout_constraintBottom_toTopOf="@+id/atv_nav_button"
             app:layout_constraintTop_toTopOf="@+id/header_image">
 
@@ -271,39 +270,6 @@
             app:layout_constraintEnd_toStartOf="@+id/atv_nav_button"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
-
-        <ImageView
-            android:id="@+id/menu_button"
-            android:layout_width="50dp"
-            android:layout_height="0dp"
-            android:background="@color/dark"
-            android:backgroundTint="@color/dark"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:padding="10dp"
-            android:onClick="@{() -> homeScreenViewModel.onClickMenuButton()}"
-            app:cornerRadius="0dp"
-            app:iconGravity="textEnd"
-            app:iconSize="30dp"
-            app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/header_image"
-            app:srcCompat="@drawable/ic_menu" />
-
-        <ImageView
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
-            app:layout_constraintStart_toEndOf="@+id/menu_button"
-            app:srcCompat="@drawable/ic_botton_left_corner" />
-
-        <ImageView
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:rotation="90"
-            app:layout_constraintStart_toEndOf="@+id/menu_button"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_botton_left_corner" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

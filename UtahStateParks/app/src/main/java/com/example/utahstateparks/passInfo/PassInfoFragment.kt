@@ -1,4 +1,4 @@
-package com.example.utahstateparks.parkPasses
+package com.example.utahstateparks.passInfo
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,13 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.utahstateparks.R
 
-class ParkPassesFragment : Fragment() {
+class PassInfoFragment : Fragment() {
 
     companion object {
-        fun newInstance() = ParkPassesFragment()
+        fun newInstance() = PassInfoFragment()
     }
 
-    private lateinit var viewModel: ParkPassesViewModel
+    private lateinit var viewModel: PassInfoViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,7 +25,7 @@ class ParkPassesFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ParkPassesViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(PassInfoViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

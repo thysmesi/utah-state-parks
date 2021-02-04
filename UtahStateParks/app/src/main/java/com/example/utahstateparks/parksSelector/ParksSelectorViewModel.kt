@@ -1,4 +1,4 @@
-package com.example.utahstateparks.ParksSelector
+package com.example.utahstateparks.parksSelector
 
 import androidx.lifecycle.ViewModel
 

@@ -34,12 +34,12 @@
         tools:layout="@layout/boating_info_fragment" />
     <fragment
         android:id="@+id/parkPassesFragment"
-        android:name="com.example.utahstateparks.parkPasses.ParkPassesFragment"
+        android:name="com.example.utahstateparks.passInfo.PassInfoFragment"
         android:label="park_passes_fragment"
         tools:layout="@layout/park_passes_fragment" />
     <fragment
         android:id="@+id/parksSelectorFragment"
-        android:name="com.example.utahstateparks.ParksSelector.ParksSelectorFragment"
+        android:name="com.example.utahstateparks.parksSelector.ParksSelectorFragment"
         android:label="parks_selector_fragment"
         tools:layout="@layout/parks_selector_fragment" />
 </navigation>
