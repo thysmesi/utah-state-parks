@@ -34,7 +34,7 @@
             android:layout_height="0dp"
             android:layout_centerVertical="true"
             android:background="@color/dark"
-            app:layout_constraintBottom_toTopOf="@+id/atv_nav_button"
+            app:layout_constraintBottom_toTopOf="@+id/map_nav_button"
             app:layout_constraintTop_toTopOf="@+id/header_image">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -229,45 +229,46 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/atv_nav_button" />
+            app:layout_constraintStart_toEndOf="@+id/map_nav_button" />
 
         <Button
-            android:id="@+id/atv_nav_button"
+            android:id="@+id/map_nav_button"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:backgroundTint="@color/white"
             android:includeFontPadding="false"
             android:insetTop="0dp"
             android:insetBottom="0dp"
+            android:onClick="@{() -> homeScreenViewModel.onClickMapButton()}"
             android:paddingBottom="10dp"
-            android:onClick="@{() -> homeScreenViewModel.onClickAtvButton()}"
             app:cornerRadius="0dp"
-            app:icon="@drawable/quad_icon"
+            app:icon="@drawable/ic_map"
             app:iconGravity="textEnd"
             app:iconPadding="0dp"
+            app:iconSize="35dp"
             app:iconTint="@color/dark"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/pass_nav_button"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/boat_nav_button" />
+            app:layout_constraintStart_toEndOf="@+id/home_nav_button" />
 
         <Button
-            android:id="@+id/boat_nav_button"
+            android:id="@+id/home_nav_button"
             android:layout_width="0dp"
             android:layout_height="60dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/dark"
             android:includeFontPadding="false"
             android:insetTop="0dp"
             android:insetBottom="0dp"
             android:rotationX="-360"
-            android:onClick="@{() -> homeScreenViewModel.onClickBoatButton()}"
             app:cornerRadius="0dp"
-            app:icon="@drawable/ic_boat"
+            app:icon="@drawable/ic_home"
             app:iconGravity="textStart"
             app:iconPadding="0dp"
-            app:iconTint="@color/dark"
+            app:iconSize="33dp"
+            app:iconTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/atv_nav_button"
+            app:layout_constraintEnd_toStartOf="@+id/map_nav_button"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 

@@ -2,17 +2,18 @@ package com.example.utahstateparks.passInfo
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.example.utahstateparks.R
+import com.example.utahstateparks.databinding.PassInfoFragmentBinding
+import com.example.utahstateparks.homeScreen.HomeScreenFragmentDirections
 
 class PassInfoFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = PassInfoFragment()
-    }
 
     private lateinit var viewModel: PassInfoViewModel
 
@@ -20,13 +21,31 @@ class PassInfoFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.park_passes_fragment, container, false)
-    }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(PassInfoViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
 
+        val binding: PassInfoFragmentBinding = DataBindingUtil.inflate(
+            inflater, R.layout.pass_info_fragment, container, false)
+
+        binding.passInfoViewModel = viewModel
+        binding.lifecycleOwner = this
+        Log.i("asdf", "first")
+        viewModel.navigateToHomeScreen.observe(viewLifecycleOwner, {
+            if (it == true) {
+                Log.i("PassInfoFragment", "asdfasdf")
+                this.findNavController().navigate(PassInfoFragmentDirections.actionParkPassesFragmentToHomeMapFragment())
+
+                viewModel.doneNavigating()
+            }
+        })
+        viewModel.navigateToMap.observe(viewLifecycleOwner, {
+            if (it == true) {
+                this.findNavController().navigate(PassInfoFragmentDirections.actionParkPassesFragmentToHomeMapFragment())
+
+                viewModel.doneNavigating()
+            }
+        })
+
+        return inflater.inflate(R.layout.pass_info_fragment, container, false)
+    }
 }

@@ -5,14 +5,24 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_boat"
-            android:title="@string/menu_home" />
+            android:id="@+id/drawer_boatingInfo"
+            android:title="Contact Us" />
         <item
             android:id="@+id/nav_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="State Passes" />
         <item
             android:id="@+id/nav_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="Map" />
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle"
+            android:title="Favorite Parks">
+            <menu>
+                <item android:title=""/>
+            </menu>
+        </item>
     </group>
 </menu>

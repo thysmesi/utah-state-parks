@@ -17,18 +17,13 @@ import com.example.utahstateparks.R
 import com.example.utahstateparks.databinding.HomeScreenFragmentBinding
 import com.google.android.material.navigation.NavigationView
 
-
 class HomeScreenFragment : Fragment() {
-
-    companion object {
-        fun newInstance() = HomeScreenFragment()
-    }
 
     private lateinit var viewModel: HomeScreenViewModel
 
     override fun onCreateView(
-            inflater: LayoutInflater, container: ViewGroup?,
-            savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
     ): View? {
 
         viewModel = ViewModelProvider(this).get(HomeScreenViewModel::class.java)
@@ -67,9 +62,9 @@ class HomeScreenFragment : Fragment() {
                 viewModel.doneNavigating()
             }
         })
-        viewModel.navigateToMenu.observe(viewLifecycleOwner, Observer {
+        viewModel.navigateToMap.observe(viewLifecycleOwner, Observer {
             if (it == true) {
-                //binding.navDrawer.openDrawer(Gravity.LEFT)
+                this.findNavController().navigate(HomeScreenFragmentDirections.actionHomeScreenFragmentToHomeMapFragment())
                 viewModel.doneNavigating()
             }
         })

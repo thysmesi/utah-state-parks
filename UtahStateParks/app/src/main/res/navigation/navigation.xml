@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeScreenFragment"
         android:name="com.example.utahstateparks.homeScreen.HomeScreenFragment"
-        android:label="home_screen_fragment">
+        android:label="Home">
         <action
             android:id="@+id/action_homeScreenFragment_to_atvInfoFragment"
             app:destination="@id/atvInfoFragment" />
@@ -17,29 +17,43 @@
             app:destination="@id/boatingInfoFragment" />
         <action
             android:id="@+id/action_homeScreenFragment_to_parkPassesFragment"
-            app:destination="@id/parkPassesFragment" />
+            app:destination="@id/passInfoFragment" />
         <action
             android:id="@+id/action_homeScreenFragment_to_parksSelectorFragment"
             app:destination="@id/parksSelectorFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_homeMapFragment"
+            app:destination="@id/homeMapFragment" />
     </fragment>
     <fragment
         android:id="@+id/atvInfoFragment"
         android:name="com.example.utahstateparks.atvInfo.AtvInfoFragment"
-        android:label="atv_info_fragment"
+        android:label="ATV Information"
         tools:layout="@layout/atv_info_fragment" />
     <fragment
         android:id="@+id/boatingInfoFragment"
         android:name="com.example.utahstateparks.boatingInfo.BoatingInfoFragment"
-        android:label="boating_info_fragment"
+        android:label="Boating Information"
         tools:layout="@layout/boating_info_fragment" />
     <fragment
-        android:id="@+id/parkPassesFragment"
+        android:id="@+id/passInfoFragment"
         android:name="com.example.utahstateparks.passInfo.PassInfoFragment"
-        android:label="park_passes_fragment"
-        tools:layout="@layout/park_passes_fragment" />
+        android:label="State Passes">
+        <action
+            android:id="@+id/action_parkPassesFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+        <action
+            android:id="@+id/action_parkPassesFragment_to_homeMapFragment"
+            app:destination="@id/homeMapFragment" />
+    </fragment>
     <fragment
         android:id="@+id/parksSelectorFragment"
         android:name="com.example.utahstateparks.parksSelector.ParksSelectorFragment"
-        android:label="parks_selector_fragment"
+        android:label="Parks"
         tools:layout="@layout/parks_selector_fragment" />
+    <fragment
+        android:id="@+id/homeMapFragment"
+        android:name="com.example.utahstateparks.homeMap.HomeMapFragment"
+        android:label="Map"
+        tools:layout="@layout/home_map_fragment" />
 </navigation>
