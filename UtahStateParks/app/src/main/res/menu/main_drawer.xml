@@ -8,10 +8,10 @@
             android:id="@+id/drawer_boatingInfo"
             android:title="Contact Us" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/drawer_passes"
             android:title="State Passes" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/drawer_map"
             android:title="Map" />
     </group>
     <group

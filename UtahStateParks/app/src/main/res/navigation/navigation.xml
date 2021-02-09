@@ -40,10 +40,10 @@
         android:name="com.example.utahstateparks.passInfo.PassInfoFragment"
         android:label="State Passes">
         <action
-            android:id="@+id/action_parkPassesFragment_to_homeScreenFragment"
+            android:id="@+id/action_passInfoFragment_to_homeScreenFragment"
             app:destination="@id/homeScreenFragment" />
         <action
-            android:id="@+id/action_parkPassesFragment_to_homeMapFragment"
+            android:id="@+id/action_passInfoFragment_to_homeMapFragment"
             app:destination="@id/homeMapFragment" />
     </fragment>
     <fragment

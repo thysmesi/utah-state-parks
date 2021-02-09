@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
@@ -18,6 +19,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.utahstateparks.databinding.ActivityMainBinding
+import com.example.utahstateparks.homeScreen.HomeScreenFragmentDirections
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -40,14 +42,30 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
         val navController = navHostFragment.navController
 
-        navView.menu.findItem(R.id.nav_gallery).setOnMenuItemClickListener { menuItem: MenuItem? ->
+        navView.menu.findItem(R.id.drawer_boatingInfo).setOnMenuItemClickListener { menuItem: MenuItem? ->
             if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                 drawerLayout.closeDrawer(GravityCompat.START)
             }
-            Toast.makeText(applicationContext, "single item click listener implemented", Toast.LENGTH_SHORT).show()
+            navController.navigate(HomeScreenFragmentDirections.actionHomeScreenFragmentToBoatingInfoFragment())
             true
         }
-        getSupportActionBar()?.setDisplayShowTitleEnabled(false);
+        navView.menu.findItem(R.id.drawer_map).setOnMenuItemClickListener { menuItem: MenuItem? ->
+            if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                drawerLayout.closeDrawer(GravityCompat.START)
+            }
+            navController.navigate(HomeScreenFragmentDirections.actionHomeScreenFragmentToHomeMapFragment())
+            true
+        }
+        navView.menu.findItem(R.id.drawer_passes).setOnMenuItemClickListener { menuItem: MenuItem? ->
+            if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                drawerLayout.closeDrawer(GravityCompat.START)
+            }
+            navController.navigate(HomeScreenFragmentDirections.actionHomeScreenFragmentToParkPassesFragment())
+            true
+        }
+
+
+        supportActionBar?.setDisplayShowTitleEnabled(true);
 
         appBarConfiguration = AppBarConfiguration(setOf(R.id.homeScreenFragment), drawerLayout)
 

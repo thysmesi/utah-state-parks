@@ -20,11 +20,9 @@ class PassInfoViewModel : ViewModel() {
     }
 
     fun onClickHomeButton() {
-        Log.i("asdf", "home")
         _navigateToHomeScreen.value = true
     }
     fun onClickMapButton() {
-        Log.i("asdf", "map")
         _navigateToMap.value = true
     }
 }

@@ -34,7 +34,7 @@
             android:layout_height="0dp"
             android:layout_centerVertical="true"
             android:background="@color/dark"
-            app:layout_constraintBottom_toTopOf="@+id/map_nav_button"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="@+id/header_image">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -110,7 +110,7 @@
                     android:gravity="center_horizontal"
                     android:padding="3dp"
                     android:text="@string/find_a_park"
-                    android:textSize="14dp"
+                    android:textSize="14sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/park_menu_button"
                     app:layout_constraintEnd_toEndOf="@+id/park_menu_button"
@@ -125,7 +125,7 @@
                     android:gravity="bottom|center_horizontal"
                     android:text="@string/boating_information"
                     android:textAllCaps="false"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/boat_menu_button"
                     app:layout_constraintEnd_toEndOf="@+id/boat_menu_button"
@@ -139,7 +139,7 @@
                     android:fontFamily="@font/kadwa"
                     android:gravity="bottom|center_horizontal"
                     android:text="@string/park_passes"
-                    android:textSize="12dp"
+                    android:textSize="12sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="@+id/pass_menu_button"
                     app:layout_constraintEnd_toEndOf="@+id/pass_menu_button"
@@ -170,7 +170,7 @@
                         android:layout_marginBottom="17dp"
                         android:fontFamily="@font/kadwa"
                         android:text="@string/off_highway_vehicle"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="@+id/textView2"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -183,7 +183,7 @@
                         android:layout_marginBottom="7dp"
                         android:fontFamily="@font/kadwa"
                         android:text="@string/information"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -212,65 +212,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.core.widget.NestedScrollView>
-
-        <Button
-            android:id="@+id/pass_nav_button"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/white"
-            android:insetTop="0dp"
-            android:onClick="@{() -> homeScreenViewModel.onClickPassButton()}"
-            android:insetBottom="0dp"
-            app:cornerRadius="0dp"
-            app:icon="@drawable/tickets_icon"
-            app:iconGravity="textEnd"
-            app:iconPadding="0dp"
-            app:iconTint="@color/dark"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/map_nav_button" />
-
-        <Button
-            android:id="@+id/map_nav_button"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/white"
-            android:includeFontPadding="false"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:onClick="@{() -> homeScreenViewModel.onClickMapButton()}"
-            android:paddingBottom="10dp"
-            app:cornerRadius="0dp"
-            app:icon="@drawable/ic_map"
-            app:iconGravity="textEnd"
-            app:iconPadding="0dp"
-            app:iconSize="35dp"
-            app:iconTint="@color/dark"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/pass_nav_button"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/home_nav_button" />
-
-        <Button
-            android:id="@+id/home_nav_button"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
-            android:backgroundTint="@color/dark"
-            android:includeFontPadding="false"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:rotationX="-360"
-            app:cornerRadius="0dp"
-            app:icon="@drawable/ic_home"
-            app:iconGravity="textStart"
-            app:iconPadding="0dp"
-            app:iconSize="33dp"
-            app:iconTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/map_nav_button"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

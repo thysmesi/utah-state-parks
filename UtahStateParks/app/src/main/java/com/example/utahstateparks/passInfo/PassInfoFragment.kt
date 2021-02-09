@@ -11,7 +11,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.navigation.fragment.findNavController
 import com.example.utahstateparks.R
 import com.example.utahstateparks.databinding.PassInfoFragmentBinding
-import com.example.utahstateparks.homeScreen.HomeScreenFragmentDirections
+import com.example.utahstateparks.passInfo.PassInfoFragmentDirections
 
 class PassInfoFragment : Fragment() {
 
@@ -29,18 +29,17 @@ class PassInfoFragment : Fragment() {
 
         binding.passInfoViewModel = viewModel
         binding.lifecycleOwner = this
-        Log.i("asdf", "first")
+
         viewModel.navigateToHomeScreen.observe(viewLifecycleOwner, {
             if (it == true) {
-                Log.i("PassInfoFragment", "asdfasdf")
-                this.findNavController().navigate(PassInfoFragmentDirections.actionParkPassesFragmentToHomeMapFragment())
+                this.findNavController().navigate(PassInfoFragmentDirections.actionPassInfoFragmentToHomeScreenFragment())
 
                 viewModel.doneNavigating()
             }
         })
         viewModel.navigateToMap.observe(viewLifecycleOwner, {
             if (it == true) {
-                this.findNavController().navigate(PassInfoFragmentDirections.actionParkPassesFragmentToHomeMapFragment())
+                this.findNavController().navigate(PassInfoFragmentDirections.actionPassInfoFragmentToHomeMapFragment())
 
                 viewModel.doneNavigating()
             }
