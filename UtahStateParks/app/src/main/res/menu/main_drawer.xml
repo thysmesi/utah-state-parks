@@ -5,7 +5,7 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/drawer_boatingInfo"
+            android:id="@+id/drawer_contact"
             android:title="Contact Us" />
         <item
             android:id="@+id/drawer_passes"

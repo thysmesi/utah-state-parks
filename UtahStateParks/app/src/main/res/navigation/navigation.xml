@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_homeScreenFragment_to_homeMapFragment"
             app:destination="@id/homeMapFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
     </fragment>
     <fragment
         android:id="@+id/atvInfoFragment"
@@ -56,4 +59,9 @@
         android:name="com.example.utahstateparks.homeMap.HomeMapFragment"
         android:label="Map"
         tools:layout="@layout/home_map_fragment" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.utahstateparks.contact.ContactFragment"
+        android:label="contact_fragment"
+        tools:layout="@layout/contact_fragment" />
 </navigation>
