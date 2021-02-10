@@ -42,11 +42,11 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
         val navController = navHostFragment.navController
 
-        navView.menu.findItem(R.id.drawer_boatingInfo).setOnMenuItemClickListener { menuItem: MenuItem? ->
+        navView.menu.findItem(R.id.drawer_contact).setOnMenuItemClickListener { menuItem: MenuItem? ->
             if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
                 drawerLayout.closeDrawer(GravityCompat.START)
             }
-            navController.navigate(HomeScreenFragmentDirections.actionHomeScreenFragmentToBoatingInfoFragment())
+            navController.navigate(HomeScreenFragmentDirections.actionHomeScreenFragmentToContactFragment())
             true
         }
         navView.menu.findItem(R.id.drawer_map).setOnMenuItemClickListener { menuItem: MenuItem? ->
