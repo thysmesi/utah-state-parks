@@ -52,12 +52,13 @@ class MainActivity : AppCompatActivity() {
 
 
         val lifecycleOwner = this
-        lifecycleScope.launch {
+        //lifecycleScope.launch {
             val database = AppDatabase.getInstance(applicationContext)
             val favorites = database.stateParkDao().getFavorites()
 
             favorites.observe(lifecycleOwner, Observer {
-                val menuGroup = navView.menu.addSubMenu("Favorite Parks")
+                navView.menu.removeGroup(2)
+                val menuGroup = navView.menu.addSubMenu(2,0,0,"Favorite Parks")
 
                 favorites.value?.forEach {
                     val item = menuGroup.add(it.parkName)
@@ -72,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             })
-        }
+        //}
 
         appBarConfiguration = AppBarConfiguration(setOf(
                 R.id.homeFragment, R.id.contactFragment, R.id.passInfoFragment, R.id.mapFragment, R.id.parkSelectorFragment, R.id.stateParkFragment), drawerLayout)

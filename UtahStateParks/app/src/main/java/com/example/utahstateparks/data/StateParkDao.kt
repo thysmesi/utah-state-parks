@@ -10,7 +10,7 @@ interface StateParkDao {
     fun getParks(): LiveData<List<StatePark>>
 
     @Query("SELECT * FROM stateparks WHERE favorite == 1")
-    suspend fun getFavorites(): LiveData<List<StatePark>>
+    fun getFavorites(): LiveData<List<StatePark>>
 
     @Query("SELECT * from stateparks WHERE parkId = :key")
     fun getParkWithId(key: Long): LiveData<StatePark>
