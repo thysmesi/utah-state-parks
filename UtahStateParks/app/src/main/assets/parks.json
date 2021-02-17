@@ -1,0 +1,398 @@
+[{
+        "parkName": "Anasazi State Park Museum",
+        "county": "Garfield",
+        "size": "6 acres",
+        "elevation": "6,700 ft",
+        "yearEstablished": 1970,
+        "yearlyVisitors": "20,824",
+        "remarks": "Interprets a large Ancestral Puebloan village occupied from AD 1160 to 1235.",
+        "favorite": true
+    },
+    {
+        "parkName": "Antelope Island State Park",
+        "county": "Davis",
+        "size": "22,022 acres",
+        "elevation": "5,308 ft",
+        "yearEstablished": 1969,
+        "yearlyVisitors": "398,147",
+        "remarks": "Protects Antelope Island, the largest island in the Great Salt Lake and habitat for bison, Pronghorn, and bighorn sheep."
+    },
+    {
+        "parkName": "Bear Lake State Park",
+        "county": "Rich",
+        "size": "",
+        "elevation": "5,900 ft",
+        "yearEstablished": 1962,
+        "yearlyVisitors": "249,781",
+        "remarks": "Comprises three units on Bear Lake."
+    },
+    {
+        "parkName": "Camp Floyd / Stagecoach Inn State Park and Museum",
+        "county": "Utah",
+        "size": "40 acres",
+        "elevation": "4,877 ft",
+        "yearEstablished": 1958,
+        "yearlyVisitors": "13,623",
+        "remarks": "Interprets sites from the time of a massive 1858-1861 U.S. Army camp prompted by fear of the Utah War."
+    },
+    {
+        "parkName": "Coral Pink Sand Dunes State Park",
+        "county": "Kane",
+        "size": "3,730 acres",
+        "elevation": "6,000 ft",
+        "yearEstablished": 1963,
+        "yearlyVisitors": "82,427",
+        "remarks": "Preserves the only dune field on the Colorado Plateau, with a unique color caused by iron oxides and minerals in the Navajo sandstone."
+    },
+    {
+        "parkName": "Dead Horse Point State Park",
+        "county": "Grand and San Juan",
+        "size": "5,300 acres",
+        "elevation": "5,900 ft",
+        "yearEstablished": 1959,
+        "yearlyVisitors": "403,737",
+        "remarks": "Showcases views of the Colorado River and Canyonlands National Park from a finger of land once used as a horse corral."
+    },
+    {
+        "parkName": "Deer Creek State Park",
+        "county": "Wasatch",
+        "size": "3,260 acres",
+        "elevation": "5,400 ft",
+        "yearEstablished": 1971,
+        "yearlyVisitors": "283,744",
+        "remarks": "Adjoins the extremely popular 2,965-acre  Deer Creek Reservoir."
+    },
+    {
+        "parkName": "East Canyon State Park",
+        "county": "Morgan",
+        "size": "267 acres",
+        "elevation": "5,700 ft",
+        "yearEstablished": 1962,
+        "yearlyVisitors": "85,163",
+        "remarks": "Features a reservoir in a canyon first traversed by the Donner Party and soon thereafter by Mormon pioneers."
+    },
+    {
+        "parkName": "Echo State Park",
+        "county": "Summit",
+        "size": "",
+        "elevation": "",
+        "yearEstablished": 2018,
+        "yearlyVisitors": "??",
+        "remarks": "Echo Reservoir recreation."
+    },
+    {
+        "parkName": "Edge of the Cedars State Park Museum",
+        "county": "San Juan",
+        "size": "16 acres",
+        "elevation": "6,200 ft",
+        "yearEstablished": 1978,
+        "yearlyVisitors": "9,626",
+        "remarks": "Interprets an Ancestral Puebloan village occupied from AD 825 to 1125."
+    },
+    {
+        "parkName": "Escalante Petrified Forest State Park",
+        "county": "Garfield",
+        "size": "1,350 acres",
+        "elevation": "5,900 ft",
+        "yearEstablished": 1976,
+        "yearlyVisitors": "52,110",
+        "remarks": "Features petrified wood and other fossils plus a recreational reservoir."
+    },
+    {
+        "parkName": "Flight Park State Recreation Area",
+        "county": "Salt Lake and Utah",
+        "size": "147 acres",
+        "elevation": "5,146 ft",
+        "yearEstablished": 2006,
+        "yearlyVisitors": "No Data",
+        "remarks": "Offers one of the world's best training sites for hang gliding and parasailing, plus a modelport for radio control aircraft."
+    },
+    {
+        "parkName": "Fremont Indian State Park and Museum",
+        "county": "Sevier",
+        "size": "889 acres",
+        "elevation": "5,900 ft",
+        "yearEstablished": 1987,
+        "yearlyVisitors": "17,550",
+        "remarks": "Preserves rock art and artifacts from the largest Fremont culture village yet discovered."
+    },
+    {
+        "parkName": "Frontier Homestead State Park Museum",
+        "county": "Iron",
+        "size": "11 acres",
+        "elevation": "5,800 ft",
+        "yearEstablished": 1973,
+        "yearlyVisitors": "9,265",
+        "remarks": "Preserves historic structures and equipment from the 1850s to the 1920s, including Old Iron Town and an extensive collection of horse-drawn vehicles. Formerly called Iron Mission State Park."
+    },
+    {
+        "parkName": "Goblin Valley State Park",
+        "county": "Emery",
+        "size": "3,654 acres",
+        "elevation": "5,000 ft",
+        "yearEstablished": 1974,
+        "yearlyVisitors": "191,414",
+        "remarks": "Showcases an unearthly landscape of hoodoos and other rock formations."
+    },
+    {
+        "parkName": "Goosenecks State Park",
+        "county": "San Juan",
+        "size": "10 acres",
+        "elevation": "4,500 ft",
+        "yearEstablished": 1962,
+        "yearlyVisitors": "51,985",
+        "remarks": "Overlooks some dramatic meanders of the San Juan River."
+    },
+    {
+        "parkName": "Great Salt Lake State Park",
+        "county": "Salt Lake",
+        "size": "162 acres",
+        "elevation": "4,200 ft",
+        "yearEstablished": 1978,
+        "yearlyVisitors": "396,911",
+        "remarks": "Maintains a public boat launch and 320-slip marina on the Great Salt Lake."
+    },
+    {
+        "parkName": "Green River State Park",
+        "county": "Emery",
+        "size": "53 acres",
+        "elevation": "4,050 ft",
+        "yearEstablished": 1965,
+        "yearlyVisitors": "56,828",
+        "remarks": "Features a shady campground, nine-hole golf course, and float trip launching on the Green River."
+    },
+    {
+        "parkName": "Gunlock State Park",
+        "county": "Washington",
+        "size": "549 acres",
+        "elevation": "3,600 ft",
+        "yearEstablished": 1970,
+        "yearlyVisitors": "14,423",
+        "remarks": "Adjoins a 266-acre  reservoir."
+    },
+    {
+        "parkName": "Historic Union Pacific Rail Trail State Park",
+        "county": "Summit",
+        "size": "450 acres",
+        "elevation": "6,900 ft",
+        "yearEstablished": 1992,
+        "yearlyVisitors": "No Data",
+        "remarks": "Comprises a 28-mile  rail trail on a route used by the Union Pacific Railroad from 1880 to 1989."
+    },
+    {
+        "parkName": "Huntington State Park",
+        "county": "Emery",
+        "size": "111 acres",
+        "elevation": "5,840 ft",
+        "yearEstablished": 1966,
+        "yearlyVisitors": "30,708",
+        "remarks": "Features a warm-water reservoir."
+    },
+    {
+        "parkName": "Hyrum State Park",
+        "county": "Cache",
+        "size": "264 acres",
+        "elevation": "4,700 ft",
+        "yearEstablished": 1959,
+        "yearlyVisitors": "75,073",
+        "remarks": "Surrounds a 450-acre  reservoir."
+    },
+    {
+        "parkName": "Jordan River Off-Highway Vehicle State Recreation Area",
+        "county": "Salt Lake",
+        "size": "350 acres",
+        "elevation": "4,700 ft",
+        "yearEstablished": 2002,
+        "yearlyVisitors": "12,130",
+        "remarks": "Offers four tracks for off highway vehicles along the Jordan River."
+    },
+    {
+        "parkName": "Jordanelle State Park",
+        "county": "Wasatch",
+        "size": "",
+        "elevation": "6,166 ft",
+        "yearEstablished": 1995,
+        "yearlyVisitors": "403,136",
+        "remarks": "Comprises two recreation areas on Jordanelle Reservoir."
+    },
+    {
+        "parkName": "Kodachrome Basin State Park",
+        "county": "Kane",
+        "size": "2,240 acres",
+        "elevation": "5,800 ft",
+        "yearEstablished": 1963,
+        "yearlyVisitors": "107,850",
+        "remarks": "Showcases 67 rock spires and other geologic wonders in a basin so photogenic it was named after Kodachrome film."
+    },
+    {
+        "parkName": "Millsite State Park",
+        "county": "Emery",
+        "size": "638 acres",
+        "elevation": "6,100 ft",
+        "yearEstablished": 1971,
+        "yearlyVisitors": "28,805",
+        "remarks": "Features a reservoir and lands for off highway vehicles and mountain biking."
+    },
+    {
+        "parkName": "Otter Creek State Park",
+        "county": "Piute",
+        "size": "80 acres",
+        "elevation": "5,900 ft",
+        "yearEstablished": 1964,
+        "yearlyVisitors": "31,361",
+        "remarks": "Features a 3,120-acre  reservoir, begun in 1897 as one of the earliest dam projects in Utah."
+    },
+    {
+        "parkName": "Palisade State Park",
+        "county": "Sanpete",
+        "size": "64 acres",
+        "elevation": "5,800 ft",
+        "yearEstablished": 1962,
+        "yearlyVisitors": "113,713",
+        "remarks": "Features a reservoir and 18-hole golf course on the former site of a private resort founded in the 1860s."
+    },
+    {
+        "parkName": "Piute State Park",
+        "county": "Piute",
+        "size": "40 acres",
+        "elevation": "5,900 ft",
+        "yearEstablished": 1963,
+        "yearlyVisitors": "1,302",
+        "remarks": "Protects a quiet fishing reservoir on the Sevier River."
+    },
+    {
+        "parkName": "Quail Creek State Park",
+        "county": "Washington",
+        "size": "",
+        "elevation": "3,300 ft",
+        "yearEstablished": 1986,
+        "yearlyVisitors": "83,017",
+        "remarks": "Adjoins a 600-acre  reservoir surrounded by red rock desert."
+    },
+    {
+        "parkName": "Red Fleet State Park",
+        "county": "Uintah",
+        "size": "1,963 acres",
+        "elevation": "5,500 ft",
+        "yearEstablished": 1988,
+        "yearlyVisitors": "28,506",
+        "remarks": "Features a 750-acre  reservoir and a fossil trackway of dinosaur footprints."
+    },
+    {
+        "parkName": "Rockport State Park",
+        "county": "Summit",
+        "size": "550 acres",
+        "elevation": "6,000 ft",
+        "yearEstablished": 1966,
+        "yearlyVisitors": "118,556",
+        "remarks": "Features a 1,080-acre  reservoir."
+    },
+    {
+        "parkName": "Sand Hollow State Park",
+        "county": "Washington",
+        "size": "20,611 acres",
+        "elevation": "3,000 ft",
+        "yearEstablished": 2003,
+        "yearlyVisitors": "433,152",
+        "remarks": "Features a 1,322-acre  reservoir and an extensive off highway vehicle recreation area."
+    },
+    {
+        "parkName": "Scofield State Park",
+        "county": "Carbon",
+        "size": "",
+        "elevation": "7,600 ft",
+        "yearEstablished": 1965,
+        "yearlyVisitors": "21,860",
+        "remarks": "Features a 2,800-acre  reservoir."
+    },
+    {
+        "parkName": "Snow Canyon State Park",
+        "county": "Washington",
+        "size": "7,400 acres",
+        "elevation": "3,100 ft",
+        "yearEstablished": 1962,
+        "yearlyVisitors": "272,041",
+        "remarks": "Showcases a canyon carved out of colorful Navajo sandstone and landforms created by the Santa Clara Volcano."
+    },
+    {
+        "parkName": "Starvation State Park",
+        "county": "Duchesne",
+        "size": "3,500 acres",
+        "elevation": "5,700 ft",
+        "yearEstablished": 1972,
+        "yearlyVisitors": "100,489",
+        "remarks": "Features a 3,495-acre  reservoir where early settlers once struggled against starvation."
+    },
+    {
+        "parkName": "Steinaker State Park",
+        "county": "Uintah",
+        "size": "2,283 acres",
+        "elevation": "5,500 ft",
+        "yearEstablished": 1964,
+        "yearlyVisitors": "37,519",
+        "remarks": "Features an 820-acre  reservoir."
+    },
+    {
+        "parkName": "This Is the Place Heritage Park",
+        "county": "Salt Lake",
+        "size": "450 acres",
+        "elevation": "4,921 ft",
+        "yearEstablished": 1957,
+        "yearlyVisitors": "No Data",
+        "remarks": "Interprets Utah's settlement era with a living history village and This Is the Place Monument."
+    },
+    {
+        "parkName": "Territorial Statehouse State Park Museum",
+        "county": "Millard",
+        "size": "3 acres",
+        "elevation": "5,100 ft",
+        "yearEstablished": 1957,
+        "yearlyVisitors": "7,957",
+        "remarks": "Interprets the capitol of Utah Territory, the state's oldest government building, constructed between 1852 and 1855."
+    },
+    {
+        "parkName": "Utah Field House of Natural History State Park Museum",
+        "county": "Uintah",
+        "size": "2 acres",
+        "elevation": "5,300 ft",
+        "yearEstablished": 1959,
+        "yearlyVisitors": "58,042",
+        "remarks": "Houses a state-owned museum of natural history."
+    },
+    {
+        "parkName": "Utah Lake State Park",
+        "county": "Utah",
+        "size": "308 acres",
+        "elevation": "4,500 ft",
+        "yearEstablished": 1970,
+        "yearlyVisitors": "132,954",
+        "remarks": "Adjoins Utah Lake, the state's largest body of fresh water."
+    },
+    {
+        "parkName": "Wasatch Mountain State Park",
+        "county": "Wasatch",
+        "size": "21,592 acres",
+        "elevation": "5,900 ft",
+        "yearEstablished": 1968,
+        "yearlyVisitors": "336,230",
+        "remarks": "Features extensive recreational developments, including facilities built for the 2002 Winter Olympics."
+    },
+    {
+        "parkName": "Willard Bay State Park",
+        "county": "Box Elder",
+        "size": "",
+        "elevation": "4,200 ft",
+        "yearEstablished": 1966,
+        "yearlyVisitors": "297,837",
+        "remarks": "Provides water recreation opportunities on a 9,900-acre  freshwater reservoir on the floodplain of the Great Salt Lake."
+    },
+    {
+        "parkName": "Yuba State Park",
+        "county": "Juab and Sanpete",
+        "size": "15,940 acres",
+        "elevation": "5,100 ft",
+        "yearEstablished": 1970,
+        "yearlyVisitors": "105,819",
+        "remarks": "Features a reservoir on the Sevier River."
+    }
+]
