@@ -10,4 +10,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="find_a_park">Find A Park</string>
+    <string name="atv_information">ATV Information</string>
+    <string name="boating_information">Boating Information</string>
 </resources>

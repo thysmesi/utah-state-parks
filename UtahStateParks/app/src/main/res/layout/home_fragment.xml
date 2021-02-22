@@ -29,7 +29,7 @@
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/park_selector_card"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="175dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="24dp"
@@ -38,8 +38,17 @@
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintWidth_max="400dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/find_park_menu_item" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -49,14 +58,15 @@
                         android:backgroundTint="@color/primaryHighlight"
                         android:fontFamily="sans-serif"
                         android:gravity="center"
-                        android:text="Find A Park"
+                        android:text="@string/find_a_park"
                         android:textColor="@color/onPrimaryHightlight"
                         android:textSize="19sp" />
+
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/atv_info_card"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="175dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="24dp"
@@ -65,8 +75,17 @@
                     app:cardCornerRadius="10dp"
                     app:cardElevation="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/park_selector_card">
+                    app:layout_constraintTop_toBottomOf="@+id/park_selector_card"
+                    app:layout_constraintWidth_max="400dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/atv_header_image" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -75,14 +94,14 @@
                         android:background="@drawable/rounded_corners"
                         android:backgroundTint="@color/primaryHighlight"
                         android:gravity="center"
-                        android:text="ATV Information"
+                        android:text="@string/atv_information"
                         android:textColor="@color/onPrimaryHightlight"
                         android:textSize="19sp" />
                 </com.google.android.material.card.MaterialCardView>
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/boating_info_card"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="175dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="24dp"
@@ -93,8 +112,17 @@
                     app:cardElevation="8dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/atv_info_card">
+                    app:layout_constraintTop_toBottomOf="@+id/atv_info_card"
+                    app:layout_constraintWidth_max="400dp">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/boating_header_image" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -103,7 +131,7 @@
                         android:background="@drawable/rounded_corners"
                         android:backgroundTint="@color/primaryHighlight"
                         android:gravity="center"
-                        android:text="Boating Information"
+                        android:text="@string/boating_information"
                         android:textColor="@color/onPrimaryHightlight"
                         android:textSize="19sp" />
                 </com.google.android.material.card.MaterialCardView>

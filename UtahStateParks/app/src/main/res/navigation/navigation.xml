@@ -55,7 +55,11 @@
         android:id="@+id/mapFragment"
         android:name="com.example.utahstateparks.ui.map.MapFragment"
         android:label="map_fragment"
-        tools:layout="@layout/map_fragment" />
+        tools:layout="@layout/map_fragment" >
+        <argument
+            android:name="stateParkKey"
+            app:argType="long" />
+    </fragment>
     <fragment
         android:id="@+id/stateParkFragment"
         android:name="com.example.utahstateparks.ui.statePark.StateParkFragment"
@@ -63,5 +67,8 @@
         <argument
             android:name="stateParkKey"
             app:argType="long" />
+        <action
+            android:id="@+id/action_stateParkFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
     </fragment>
 </navigation>

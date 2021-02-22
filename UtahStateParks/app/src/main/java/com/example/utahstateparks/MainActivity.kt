@@ -7,6 +7,7 @@ import android.view.View
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
+import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
@@ -19,7 +20,15 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.utahstateparks.data.AppDatabase
 import com.example.utahstateparks.data.StatePark
 import com.example.utahstateparks.databinding.ActivityMainBinding
+import com.example.utahstateparks.databinding.HomeFragmentBinding
+import com.example.utahstateparks.databinding.MapFragmentBinding
 import com.example.utahstateparks.utilities.PARKS_DATA_FILENAME
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.navigation.NavigationView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -52,28 +61,26 @@ class MainActivity : AppCompatActivity() {
 
 
         val lifecycleOwner = this
-        //lifecycleScope.launch {
-            val database = AppDatabase.getInstance(applicationContext)
-            val favorites = database.stateParkDao().getFavorites()
+        val database = AppDatabase.getInstance(applicationContext)
+        val favorites = database.stateParkDao().getFavorites()
 
-            favorites.observe(lifecycleOwner, Observer {
-                navView.menu.removeGroup(2)
-                val menuGroup = navView.menu.addSubMenu(2,0,0,"Favorite Parks")
+        favorites.observe(lifecycleOwner, Observer {
+            navView.menu.removeGroup(2)
+            val menuGroup = navView.menu.addSubMenu(2,0,0,"Favorite Parks")
 
-                favorites.value?.forEach {
-                    val item = menuGroup.add(it.parkName)
+            favorites.value?.forEach {
+                val item = menuGroup.add(it.parkName)
 
-                    item.setOnMenuItemClickListener { menuItem ->
-                        val bundle = bundleOf("stateParkKey" to it.parkId)
+                item.setOnMenuItemClickListener { menuItem ->
+                    val bundle = bundleOf("stateParkKey" to it.parkId)
 
-                        navController.navigate(R.id.stateParkFragment, bundle)
-                        drawerLayout.closeDrawers()
+                    navController.navigate(R.id.stateParkFragment, bundle)
+                    drawerLayout.closeDrawers()
 
-                        true
-                    }
+                    true
                 }
-            })
-        //}
+            }
+        })
 
         appBarConfiguration = AppBarConfiguration(setOf(
                 R.id.homeFragment, R.id.contactFragment, R.id.passInfoFragment, R.id.mapFragment, R.id.parkSelectorFragment, R.id.stateParkFragment), drawerLayout)

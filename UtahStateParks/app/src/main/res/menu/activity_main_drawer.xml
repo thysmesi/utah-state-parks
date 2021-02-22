@@ -9,17 +9,13 @@
             android:icon="@drawable/ic_menu_camera"
             android:title="Home" />
         <item
-            android:id="@+id/contactFragment"
+            android:id="@+id/atvInfoFragment"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Contact" />
+            android:title="Atv Info" />
         <item
-            android:id="@+id/passInfoFragment"
+            android:id="@+id/boatingInfoFragment"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="State Passes" />
-        <item
-            android:id="@+id/mapFragment"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Map" />
+            android:title="Boating Info" />
         <item
             android:id="@+id/parkSelectorFragment"
             android:icon="@drawable/ic_menu_slideshow"

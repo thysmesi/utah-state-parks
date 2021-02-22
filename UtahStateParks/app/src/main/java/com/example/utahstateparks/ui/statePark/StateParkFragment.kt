@@ -7,9 +7,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.example.utahstateparks.R
 import com.example.utahstateparks.data.AppDatabase
 import com.example.utahstateparks.databinding.StateParkFragmentBinding
+import com.example.utahstateparks.ui.home.HomeFragmentDirections
+import com.example.utahstateparks.ui.parkSelector.ParkSelectorFragmentDirections
 import com.example.utahstateparks.ui.parkSelector.ParkSelectorViewModel
 
 class StateParkFragment : Fragment() {
@@ -30,6 +34,14 @@ class StateParkFragment : Fragment() {
 
         binding.stateParkViewModel = stateParkViewModel
         binding.lifecycleOwner = this
+
+        stateParkViewModel.navigateToMap.observe(viewLifecycleOwner, Observer { park ->
+            park?.let {
+                this.findNavController().navigate(
+                    StateParkFragmentDirections.actionStateParkFragmentToMapFragment(park))
+                stateParkViewModel.onNavigated()
+            }
+        })
 
         return binding.root
     }

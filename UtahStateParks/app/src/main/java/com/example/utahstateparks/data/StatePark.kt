@@ -16,6 +16,7 @@ data class StatePark(
     val yearEstablished: Int,
     val yearlyVisitors: String,
     val remarks: String,
-    var favorite: Boolean = false
-
+    var favorite: Boolean = false,
+    val longitude: Double,
+    val latitude: Double
     )
