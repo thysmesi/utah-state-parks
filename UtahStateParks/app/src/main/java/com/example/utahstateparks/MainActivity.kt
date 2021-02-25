@@ -1,13 +1,9 @@
 package com.example.utahstateparks
 
 import android.content.Context
-import android.graphics.Rect
 import android.os.Bundle
-import android.view.View
-import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
-import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
@@ -20,15 +16,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.utahstateparks.data.AppDatabase
 import com.example.utahstateparks.data.StatePark
 import com.example.utahstateparks.databinding.ActivityMainBinding
-import com.example.utahstateparks.databinding.HomeFragmentBinding
-import com.example.utahstateparks.databinding.MapFragmentBinding
 import com.example.utahstateparks.utilities.PARKS_DATA_FILENAME
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.SupportMapFragment
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.navigation.NavigationView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -47,13 +35,12 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        checkFirstRun()
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.appBarMain.toolbar)
-
-        checkFirstRun()
 
         navView = binding.navView
         drawerLayout = binding.drawerLayout
@@ -88,7 +75,7 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 
-    fun checkFirstRun() {
+    private fun checkFirstRun() {
         val sharedPrefs = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE)
         val firstRun = sharedPrefs.getBoolean("first_run", true)
 

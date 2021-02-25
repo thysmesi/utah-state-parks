@@ -12,7 +12,7 @@ data class StatePark(
     val parkName: String,
     val county: String,
     val size: String,
-    val elevation: String, // how often the plant should be watered, in days
+    val elevation: String,
     val yearEstablished: Int,
     val yearlyVisitors: String,
     val remarks: String,
