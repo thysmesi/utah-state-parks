@@ -53,11 +53,9 @@ class MapFragment : Fragment(), OnMapReadyCallback {
             park?.let {
                 val mMap = googleMap
 
-                // Add a marker in Sydney and move the camera
                 val destination = LatLng(park.latitude, -park.longitude)
                 mMap.addMarker(MarkerOptions().position(destination).title("Marker"))
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(destination, 11.0f))
-                //mMap.moveCamera(CameraUpdateFactory.newLatLng(destination))
             }
         })
     }
