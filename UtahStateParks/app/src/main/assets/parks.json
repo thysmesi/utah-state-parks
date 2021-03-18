@@ -7,8 +7,9 @@
         "yearlyVisitors": "20,824",
         "remarks": "Interprets a large Ancestral Puebloan village occupied from AD 1160 to 1235.",
         "latitude": 37.9108,
-        "longitude": 111.4236
+        "longitude": -111.4236
     },
+
     {
         "parkName": "Antelope Island State Park",
         "county": "Davis",
@@ -18,7 +19,7 @@
         "yearlyVisitors": "398,147",
         "remarks": "Protects Antelope Island, the largest island in the Great Salt Lake and habitat for bison, Pronghorn, and bighorn sheep.",
         "latitude": 40.9581,
-        "longitude": 112.2146
+        "longitude": -112.2146
     },
     {
         "parkName": "Bear Lake State Park",
@@ -29,7 +30,7 @@
         "yearlyVisitors": "249,781",
         "remarks": "Comprises three units on Bear Lake.",
         "latitude": 42.0299,
-        "longitude": 111.3322
+        "longitude": -111.3322
     },
     {
         "parkName": "Camp Floyd / Stagecoach Inn State Park and Museum",
@@ -40,7 +41,7 @@
         "yearlyVisitors": "13,623",
         "remarks": "Interprets sites from the time of a massive 1858-1861 U.S. Army camp prompted by fear of the Utah War.",
         "latitude": 40.2609,
-        "longitude": 112.0933
+        "longitude": -112.0933
     },
     {
         "parkName": "Coral Pink Sand Dunes State Park",
@@ -51,7 +52,7 @@
         "yearlyVisitors": "82,427",
         "remarks": "Preserves the only dune field on the Colorado Plateau, with a unique color caused by iron oxides and minerals in the Navajo sandstone.",
         "latitude": 37.0377,
-        "longitude": 112.7144
+        "longitude": -112.7144
     },
     {
         "parkName": "Dead Horse Point State Park",
@@ -62,7 +63,7 @@
         "yearlyVisitors": "403,737",
         "remarks": "Showcases views of the Colorado River and Canyonlands National Park from a finger of land once used as a horse corral.",
         "latitude": 38.4748,
-        "longitude": 109.7406
+        "longitude": -109.7406
     },
     {
         "parkName": "Deer Creek State Park",
@@ -73,7 +74,7 @@
         "yearlyVisitors": "283,744",
         "remarks": "Adjoins the extremely popular 2,965-acre  Deer Creek Reservoir.",
         "latitude": 40.4101,
-        "longitude": 111.5030
+        "longitude": -111.5030
     },
     {
         "parkName": "East Canyon State Park",
@@ -84,7 +85,7 @@
         "yearlyVisitors": "85,163",
         "remarks": "Features a reservoir in a canyon first traversed by the Donner Party and soon thereafter by Mormon pioneers.",
         "latitude": 40.9011,
-        "longitude": 111.5871
+        "longitude": -111.5871
     },
     {
         "parkName": "Echo State Park",
@@ -95,7 +96,7 @@
         "yearlyVisitors": "??",
         "remarks": "Echo Reservoir recreation.",
         "latitude": 40.9583,
-        "longitude": 111.4080
+        "longitude": -111.4080
     },
     {
         "parkName": "Edge of the Cedars State Park Museum",
@@ -106,7 +107,7 @@
         "yearlyVisitors": "9,626",
         "remarks": "Interprets an Ancestral Puebloan village occupied from AD 825 to 1125.",
         "latitude": 37.6315,
-        "longitude": 109.4899
+        "longitude": -109.4899
     },
     {
         "parkName": "Escalante Petrified Forest State Park",
@@ -117,7 +118,7 @@
         "yearlyVisitors": "52,110",
         "remarks": "Features petrified wood and other fossils plus a recreational reservoir.",
         "latitude": 37.7865,
-        "longitude": 111.6307
+        "longitude": -111.6307
     },
     {
         "parkName": "Flight Park State Recreation Area",
@@ -128,7 +129,7 @@
         "yearlyVisitors": "No Data",
         "remarks": "Offers one of the world's best training sites for hang gliding and parasailing, plus a modelport for radio control aircraft.",
         "latitude": 40.4578,
-        "longitude": 111.9014
+        "longitude": -111.9014
     },
     {
         "parkName": "Fremont Indian State Park and Museum",
@@ -139,7 +140,7 @@
         "yearlyVisitors": "17,550",
         "remarks": "Preserves rock art and artifacts from the largest Fremont culture village yet discovered.",
         "latitude": 38.5774,
-        "longitude": 112.3344
+        "longitude": -112.3344
     },
     {
         "parkName": "Frontier Homestead State Park Museum",
@@ -150,7 +151,7 @@
         "yearlyVisitors": "9,265",
         "remarks": "Preserves historic structures and equipment from the 1850s to the 1920s, including Old Iron Town and an extensive collection of horse-drawn vehicles. Formerly called Iron Mission State Park.",
         "latitude": 37.6886,
-        "longitude": 113.0625
+        "longitude": -113.0625
     },
     {
         "parkName": "Goblin Valley State Park",
@@ -161,7 +162,7 @@
         "yearlyVisitors": "191,414",
         "remarks": "Showcases an unearthly landscape of hoodoos and other rock formations.",
         "latitude": 38.5737,
-        "longitude": 110.7071
+        "longitude": -110.7071
     },
     {
         "parkName": "Goosenecks State Park",
@@ -172,7 +173,7 @@
         "yearlyVisitors": "51,985",
         "remarks": "Overlooks some dramatic meanders of the San Juan River.",
         "latitude": 37.1742,
-        "longitude": 109.9271
+        "longitude": -109.9271
     },
     {
         "parkName": "Great Salt Lake State Park",
@@ -183,7 +184,7 @@
         "yearlyVisitors": "396,911",
         "remarks": "Maintains a public boat launch and 320-slip marina on the Great Salt Lake.",
         "latitude": 40.7337,
-        "longitude": 112.2108
+        "longitude": -112.2108
     },
     {
         "parkName": "Green River State Park",
@@ -194,7 +195,7 @@
         "yearlyVisitors": "56,828",
         "remarks": "Features a shady campground, nine-hole golf course, and float trip launching on the Green River.",
         "latitude": 38.9889,
-        "longitude": 110.1523
+        "longitude": -110.1523
     },
     {
         "parkName": "Gunlock State Park",
@@ -205,7 +206,7 @@
         "yearlyVisitors": "14,423",
         "remarks": "Adjoins a 266-acre  reservoir.",
         "latitude": 37.2544,
-        "longitude": 113.7707
+        "longitude": -113.7707
     },
     {
         "parkName": "Historic Union Pacific Rail Trail State Park",
@@ -216,7 +217,7 @@
         "yearlyVisitors": "No Data",
         "remarks": "Comprises a 28-mile  rail trail on a route used by the Union Pacific Railroad from 1880 to 1989.",
         "latitude": 40.80461452844637,
-        "longitude": -111.43852011499564
+        "longitude": --111.43852011499564
     },
     {
         "parkName": "Huntington State Park",
@@ -227,7 +228,7 @@
         "yearlyVisitors": "30,708",
         "remarks": "Features a warm-water reservoir.",
         "latitude": 33.5146,
-        "longitude": 79.0609
+        "longitude": -79.0609
     },
     {
         "parkName": "Hyrum State Park",
@@ -238,7 +239,7 @@
         "yearlyVisitors": "75,073",
         "remarks": "Surrounds a 450-acre  reservoir.",
         "latitude": 41.6274,
-        "longitude": 111.8666
+        "longitude": -111.8666
     },
     {
         "parkName": "Jordan River Off-Highway Vehicle State Recreation Area",
@@ -249,7 +250,7 @@
         "yearlyVisitors": "12,130",
         "remarks": "Offers four tracks for off highway vehicles along the Jordan River.",
         "latitude": 40.8260,
-        "longitude": 111.9422
+        "longitude": -111.9422
     },
     {
         "parkName": "Jordanelle State Park",
@@ -260,7 +261,7 @@
         "yearlyVisitors": "403,136",
         "remarks": "Comprises two recreation areas on Jordanelle Reservoir.",
         "latitude": 40.8260,
-        "longitude": 111.9422
+        "longitude": -111.9422
     },
     {
         "parkName": "Kodachrome Basin State Park",
@@ -271,7 +272,7 @@
         "yearlyVisitors": "107,850",
         "remarks": "Showcases 67 rock spires and other geologic wonders in a basin so photogenic it was named after Kodachrome film.",
         "latitude": 40.6200,
-        "longitude": 111.4097
+        "longitude": -111.4097
     },
     {
         "parkName": "Millsite State Park",
@@ -282,7 +283,7 @@
         "yearlyVisitors": "28,805",
         "remarks": "Features a reservoir and lands for off highway vehicles and mountain biking.",
         "latitude": 39.0920,
-        "longitude": 111.1940
+        "longitude": -111.1940
     },
     {
         "parkName": "Otter Creek State Park",
@@ -293,7 +294,7 @@
         "yearlyVisitors": "31,361",
         "remarks": "Features a 3,120-acre  reservoir, begun in 1897 as one of the earliest dam projects in Utah.",
         "latitude": 38.1664,
-        "longitude": 112.0186
+        "longitude": -112.0186
     },
     {
         "parkName": "Palisade State Park",
@@ -304,7 +305,7 @@
         "yearlyVisitors": "113,713",
         "remarks": "Features a reservoir and 18-hole golf course on the former site of a private resort founded in the 1860s.",
         "latitude": 39.2090,
-        "longitude": 111.6667
+        "longitude": -111.6667
     },
     {
         "parkName": "Piute State Park",
@@ -315,7 +316,7 @@
         "yearlyVisitors": "1,302",
         "remarks": "Protects a quiet fishing reservoir on the Sevier River.",
         "latitude": 38.3190,
-        "longitude": 38.3190
+        "longitude": -38.3190
     },
     {
         "parkName": "Quail Creek State Park",
@@ -326,7 +327,7 @@
         "yearlyVisitors": "83,017",
         "remarks": "Adjoins a 600-acre  reservoir surrounded by red rock desert.",
         "latitude": 37.1879,
-        "longitude": 113.3941
+        "longitude": -113.3941
     },
     {
         "parkName": "Red Fleet State Park",
@@ -337,7 +338,7 @@
         "yearlyVisitors": "28,506",
         "remarks": "Features a 750-acre  reservoir and a fossil trackway of dinosaur footprints.",
         "latitude": 40.5802,
-        "longitude": 109.4322
+        "longitude": -109.4322
     },
     {
         "parkName": "Rockport State Park",
@@ -348,7 +349,7 @@
         "yearlyVisitors": "118,556",
         "remarks": "Features a 1,080-acre  reservoir.",
         "latitude": 48.4905,
-        "longitude": 121.6179
+        "longitude": -121.6179
     },
     {
         "parkName": "Sand Hollow State Park",
@@ -359,7 +360,7 @@
         "yearlyVisitors": "433,152",
         "remarks": "Features a 1,322-acre  reservoir and an extensive off highway vehicle recreation area.",
         "latitude": 37.1200,
-        "longitude": 113.3820
+        "longitude": -113.3820
     },
     {
         "parkName": "Scofield State Park",
@@ -370,7 +371,7 @@
         "yearlyVisitors": "21,860",
         "remarks": "Features a 2,800-acre  reservoir.",
         "latitude": 39.7938,
-        "longitude": 111.1309
+        "longitude": -111.1309
     },
     {
         "parkName": "Snow Canyon State Park",
@@ -381,7 +382,7 @@
         "yearlyVisitors": "272,041",
         "remarks": "Showcases a canyon carved out of colorful Navajo sandstone and landforms created by the Santa Clara Volcano.",
         "latitude": 37.2178,
-        "longitude": 113.6396
+        "longitude": -113.6396
     },
     {
         "parkName": "Starvation State Park",
@@ -392,7 +393,7 @@
         "yearlyVisitors": "100,489",
         "remarks": "Features a 3,495-acre  reservoir where early settlers once struggled against starvation.",
         "latitude": 40.1868,
-        "longitude": 110.4674
+        "longitude": -110.4674
     },
     {
         "parkName": "Steinaker State Park",
@@ -403,7 +404,7 @@
         "yearlyVisitors": "37,519",
         "remarks": "Features an 820-acre  reservoir.",
         "latitude": 40.5172,
-        "longitude": 109.5386
+        "longitude": -109.5386
     },
     {
         "parkName": "This Is the Place Heritage Park",
@@ -414,7 +415,7 @@
         "yearlyVisitors": "No Data",
         "remarks": "Interprets Utah's settlement era with a living history village and This Is the Place Monument.",
         "latitude": 40.7526,
-        "longitude": 111.8158
+        "longitude": -111.8158
     },
     {
         "parkName": "Territorial Statehouse State Park Museum",
@@ -425,7 +426,7 @@
         "yearlyVisitors": "7,957",
         "remarks": "Interprets the capitol of Utah Territory, the state's oldest government building, constructed between 1852 and 1855.",
         "latitude": 38.9671,
-        "longitude": 112.3254
+        "longitude": -112.3254
     },
     {
         "parkName": "Utah Field House of Natural History State Park Museum",
@@ -436,7 +437,7 @@
         "yearlyVisitors": "58,042",
         "remarks": "Houses a state-owned museum of natural history.",
         "latitude": 40.4553,
-        "longitude": 109.5197
+        "longitude": -109.5197
     },
     {
         "parkName": "Utah Lake State Park",
@@ -480,6 +481,6 @@
         "yearlyVisitors": "105,819",
         "remarks": "Features a reservoir on the Sevier River.",
         "latitude": 39.3799,
-        "longitude": 112.0256
+        "longitude": -112.0256
     }
 ]
