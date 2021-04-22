@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         checkFirstRun()
-
+    lifecycleScope
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
         })
 
         appBarConfiguration = AppBarConfiguration(setOf(
-                R.id.homeFragment, R.id.contactFragment, R.id.passInfoFragment, R.id.mapFragment, R.id.parkSelectorFragment, R.id.stateParkFragment), drawerLayout)
+                R.id.homeFragment, R.id.contactFragment, R.id.passInfoFragment, R.id.mapFragment, R.id.parkSelectorFragment, R.id.atvInfoFragment, R.id.boatingInfoFragment, R.id.stateParkFragment), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }

@@ -53,7 +53,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
             park?.let {
                 val mMap = googleMap
 
-                val destination = LatLng(park.latitude, -park.longitude)
+                val destination = LatLng(park.latitude, park.longitude)
                 mMap.addMarker(MarkerOptions().position(destination).title("Marker"))
                 mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(destination, 11.0f))
             }

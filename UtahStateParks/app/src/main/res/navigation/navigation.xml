@@ -30,18 +30,18 @@
     <fragment
         android:id="@+id/boatingInfoFragment"
         android:name="com.example.utahstateparks.ui.boatingInfo.BoatingInfoFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/boating_information"
         tools:layout="@layout/boating_info_fragment" />
     <fragment
         android:id="@+id/atvInfoFragment"
         android:name="com.example.utahstateparks.ui.atvInfo.AtvInfoFragment"
-        android:label="atv_info_fragment"
+        android:label="@string/atv_information"
         tools:layout="@layout/atv_info_fragment" />
     <fragment
         android:id="@+id/parkSelectorFragment"
         android:name="com.example.utahstateparks.ui.parkSelector.ParkSelectorFragment"
-        android:label="park_selector_fragment"
-        tools:layout="@layout/park_selector_fragment" >
+        android:label="Park Selector"
+        tools:layout="@layout/park_selector_fragment">
         <action
             android:id="@+id/action_parkSelectorFragment_to_stateParkFragment"
             app:destination="@id/stateParkFragment" />
@@ -54,8 +54,7 @@
     <fragment
         android:id="@+id/mapFragment"
         android:name="com.example.utahstateparks.ui.map.MapFragment"
-        android:label="map_fragment"
-        tools:layout="@layout/map_fragment" >
+        android:label="Map">
         <argument
             android:name="stateParkKey"
             app:argType="long" />
