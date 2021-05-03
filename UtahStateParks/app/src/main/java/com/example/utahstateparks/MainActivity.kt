@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         checkFirstRun()
-    lifecycleScope
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
